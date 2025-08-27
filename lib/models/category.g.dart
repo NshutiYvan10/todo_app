@@ -26,7 +26,7 @@ class TaskCategoryAdapter extends TypeAdapter<TaskCategory> {
       case 5:
         return TaskCategory.other;
       default:
-        return TaskCategory.other;
+        return TaskCategory.work;
     }
   }
 
@@ -60,7 +60,7 @@ class TaskCategoryAdapter extends TypeAdapter<TaskCategory> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-          other is TaskCategoryAdapter &&
-              runtimeType == other.runtimeType &&
-              typeId == other.typeId;
+      other is TaskCategoryAdapter &&
+          runtimeType == other.runtimeType &&
+          typeId == other.typeId;
 }

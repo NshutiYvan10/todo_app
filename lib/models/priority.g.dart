@@ -22,7 +22,7 @@ class TaskPriorityAdapter extends TypeAdapter<TaskPriority> {
       case 3:
         return TaskPriority.urgent;
       default:
-        return TaskPriority.medium;
+        return TaskPriority.low;
     }
   }
 
@@ -50,7 +50,7 @@ class TaskPriorityAdapter extends TypeAdapter<TaskPriority> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-          other is TaskPriorityAdapter &&
-              runtimeType == other.runtimeType &&
-              typeId == other.typeId;
+      other is TaskPriorityAdapter &&
+          runtimeType == other.runtimeType &&
+          typeId == other.typeId;
 }

@@ -19,34 +19,37 @@ class UserAdapter extends TypeAdapter<User> {
     return User(
       id: fields[0] as String,
       email: fields[1] as String,
-      name: fields[2] as String,
-      bio: fields[3] as String?,
-      phone: fields[4] as String?,
-      profileImage: fields[5] as String?,
-      createdAt: fields[6] as DateTime,
-      lastLoginAt: fields[7] as DateTime?,
+      password: fields[2] as String,
+      name: fields[3] as String,
+      bio: fields[4] as String?,
+      phone: fields[5] as String?,
+      profileImage: fields[6] as String?,
+      createdAt: fields[7] as DateTime,
+      lastLoginAt: fields[8] as DateTime?,
     );
   }
 
   @override
   void write(BinaryWriter writer, User obj) {
     writer
-      ..writeByte(8)
+      ..writeByte(9)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
       ..write(obj.email)
       ..writeByte(2)
-      ..write(obj.name)
+      ..write(obj.password)
       ..writeByte(3)
-      ..write(obj.bio)
+      ..write(obj.name)
       ..writeByte(4)
-      ..write(obj.phone)
+      ..write(obj.bio)
       ..writeByte(5)
-      ..write(obj.profileImage)
+      ..write(obj.phone)
       ..writeByte(6)
-      ..write(obj.createdAt)
+      ..write(obj.profileImage)
       ..writeByte(7)
+      ..write(obj.createdAt)
+      ..writeByte(8)
       ..write(obj.lastLoginAt);
   }
 
@@ -56,7 +59,7 @@ class UserAdapter extends TypeAdapter<User> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-          other is UserAdapter &&
-              runtimeType == other.runtimeType &&
-              typeId == other.typeId;
+      other is UserAdapter &&
+          runtimeType == other.runtimeType &&
+          typeId == other.typeId;
 }
