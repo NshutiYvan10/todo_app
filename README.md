@@ -257,39 +257,40 @@ lib/
 ### Data Flow Architecture
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#e3f2fd','primaryTextColor':'#1565c0','primaryBorderColor':'#1976d2','lineColor':'#424242','secondaryColor':'#f3e5f5','tertiaryColor':'#fff3e0','clusterBkg':'#fafafa','clusterBorder':'#9e9e9e','titleColor':'#212121','edgeLabelBackground':'#ffffff','nodeTextColor':'#212121'}}}%%
 graph TB
     subgraph Presentation["🎨 PRESENTATION LAYER"]
-        Today[Today Screen]
-        Tasks[Tasks Screen]
-        Calendar[Calendar Screen]
-        Profile[Profile Screen]
+        Today["📱 Today Screen"]
+        Tasks["📋 Tasks Screen"]
+        Calendar["📅 Calendar Screen"]
+        Profile["👤 Profile Screen"]
     end
 
     subgraph StateManagement["⚡ STATE MANAGEMENT - Riverpod"]
-        TaskProv[TaskProvider<br/>Task CRUD<br/>Filtering<br/>Statistics]
-        AuthProv[AuthProvider<br/>Authentication<br/>User State<br/>Login/Logout]
-        ThemeProv[ThemeProvider<br/>Theme Mode<br/>Dark/Light]
+        TaskProv["🔧 TaskProvider<br/><br/>• Task CRUD<br/>• Filtering<br/>• Statistics"]
+        AuthProv["🔐 AuthProvider<br/><br/>• Authentication<br/>• User State<br/>• Login/Logout"]
+        ThemeProv["🎨 ThemeProvider<br/><br/>• Theme Mode<br/>• Dark/Light"]
     end
 
     subgraph BusinessLogic["🧠 BUSINESS LOGIC LAYER"]
-        TaskNotifier["TaskNotifier<br/>• addTask()<br/>• updateTask()<br/>• deleteTask()<br/>• toggleTask()<br/>• getTasksForDate()<br/>• getTodayTasks()<br/>• getOverdueTasks()"]
-        AuthNotifier["AuthNotifier<br/>• login()<br/>• signup()<br/>• logout()<br/>• updateProfile()<br/>• updateProfileImage()"]
+        TaskNotifier["⚙️ TaskNotifier<br/><br/>• addTask()<br/>• updateTask()<br/>• deleteTask()<br/>• toggleTask()<br/>• getTasksForDate()<br/>• getTodayTasks()<br/>• getOverdueTasks()"]
+        AuthNotifier["🔑 AuthNotifier<br/><br/>• login()<br/>• signup()<br/>• logout()<br/>• updateProfile()<br/>• updateProfileImage()"]
     end
 
     subgraph DataLayer["💾 DATA LAYER - Hive"]
-        TasksBox["📦 tasks_box<br/>Key-Value Store<br/>String ID → Task Object"]
-        UsersBox["📦 users_box<br/>Key-Value Store<br/>String ID → User Object"]
-        Adapters["🔧 Type Adapters<br/>TaskAdapter<br/>UserAdapter<br/>PriorityAdapter<br/>CategoryAdapter"]
-        Storage["💿 Device Storage<br/>Binary Files<br/>Local Images<br/>Fast R/W Operations"]
+        TasksBox["📦 tasks_box<br/><br/>Key-Value Store<br/>String ID → Task Object"]
+        UsersBox["📦 users_box<br/><br/>Key-Value Store<br/>String ID → User Object"]
+        Adapters["🔧 Type Adapters<br/><br/>• TaskAdapter<br/>• UserAdapter<br/>• PriorityAdapter<br/>• CategoryAdapter"]
+        Storage["💿 Device Storage<br/><br/>• Binary Files<br/>• Local Images<br/>• Fast R/W Operations"]
     end
 
-    User([👤 User Interaction])
-    UIUpdate([🔄 UI Re-render])
+    User(["👤 User Interaction"])
+    UIUpdate(["🔄 UI Re-render"])
 
-    User --> Today
-    User --> Tasks
-    User --> Calendar
-    User --> Profile
+    User ==> Today
+    User ==> Tasks
+    User ==> Calendar
+    User ==> Profile
 
     Today --> TaskProv
     Tasks --> TaskProv
@@ -298,16 +299,16 @@ graph TB
     Profile --> AuthProv
     Profile --> ThemeProv
 
-    TaskProv --> TaskNotifier
-    AuthProv --> AuthNotifier
+    TaskProv ==> TaskNotifier
+    AuthProv ==> AuthNotifier
 
-    TaskNotifier --> TasksBox
-    TaskNotifier --> UsersBox
-    AuthNotifier --> UsersBox
+    TaskNotifier ==> TasksBox
+    TaskNotifier ==> UsersBox
+    AuthNotifier ==> UsersBox
 
     TasksBox --> Adapters
     UsersBox --> Adapters
-    Adapters --> Storage
+    Adapters ==> Storage
 
     Storage -.Real-time Sync.-> TaskNotifier
     Storage -.Real-time Sync.-> AuthNotifier
@@ -324,12 +325,30 @@ graph TB
     UIUpdate -.Automatic Rebuild.-> Calendar
     UIUpdate -.Automatic Rebuild.-> Profile
 
-    style Presentation fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    style StateManagement fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    style BusinessLogic fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style DataLayer fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
-    style User fill:#ffebee,stroke:#c62828,stroke-width:3px
-    style UIUpdate fill:#e0f2f1,stroke:#00695c,stroke-width:3px
+    style Presentation fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#1565c0
+    style StateManagement fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#6a1b9a
+    style BusinessLogic fill:#fff3e0,stroke:#f57c00,stroke-width:3px,color:#e65100
+    style DataLayer fill:#e8f5e9,stroke:#388e3c,stroke-width:3px,color:#2e7d32
+    
+    style Today fill:#bbdefb,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style Tasks fill:#bbdefb,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style Calendar fill:#bbdefb,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style Profile fill:#bbdefb,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    
+    style TaskProv fill:#e1bee7,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
+    style AuthProv fill:#e1bee7,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
+    style ThemeProv fill:#e1bee7,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
+    
+    style TaskNotifier fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style AuthNotifier fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    
+    style TasksBox fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#1b5e20
+    style UsersBox fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#1b5e20
+    style Adapters fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#1b5e20
+    style Storage fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#1b5e20
+    
+    style User fill:#ffcdd2,stroke:#c62828,stroke-width:4px,color:#b71c1c
+    style UIUpdate fill:#b2dfdb,stroke:#00695c,stroke-width:4px,color:#004d40
 ```
 
 #### 🔄 Data Flow Sequence
