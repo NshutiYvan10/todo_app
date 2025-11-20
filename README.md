@@ -29,7 +29,7 @@ To deliver a premium task management experience that's beautiful, fast, and help
 
 <div align="center">
 
-<a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID">
+<a href="https://youtu.be/mbNrKldG-Hc?si=VcrTshc3dG8zANIv">
 <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg" 
      alt="Flutter Todo App Demo Video" 
      width="600" 
