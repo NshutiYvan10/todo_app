@@ -25,11 +25,21 @@ To deliver a premium task management experience that's beautiful, fast, and help
 
 ---
 
-## 🎥 Demo Video
+# 🎥 Demo Video
 
 <div align="center">
 
-### 🎥 **Watch the Full Demo on YouTube**
+<a href="https://youtu.be/mbNrKldG-Hc?si=VcrTshc3dG8zANIv">
+<img src="https://img.youtube.com/vi/mbNrKldG-Hc/maxresdefault.jpg" 
+     alt="Flutter Todo App Demo Video" 
+     width="100%" 
+     style="max-width: 800px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+</a>
+
+<br>
+<br>
+
+### 🎬 **Watch the Full Demo on YouTube**
 
 [![Watch Video](https://img.shields.io/badge/▶️_Watch_Full_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=FF0000)](https://youtu.be/mbNrKldG-Hc?si=VcrTshc3dG8zANIv)
 [![YouTube](https://img.shields.io/badge/📱_App_Walkthrough-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/mbNrKldG-Hc?si=VcrTshc3dG8zANIv)
