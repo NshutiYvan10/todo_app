@@ -29,16 +29,12 @@ To deliver a premium task management experience that's beautiful, fast, and help
 
 <div align="center">
 
-<a href="https://youtu.be/mbNrKldG-Hc?si=VcrTshc3dG8zANIv">
-<img src="https://img.youtube.com/vi/mbNrKldG-Hc/maxresdefault.jpg" 
-     alt="Flutter Todo App Demo Video" 
-     width="600" 
-     style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-</a>
+### 🎥 **Watch the Full Demo on YouTube**
 
-**▶️ Click to watch the full demo video**
+[![Watch Video](https://img.shields.io/badge/▶️_Watch_Full_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=FF0000)](https://youtu.be/mbNrKldG-Hc?si=VcrTshc3dG8zANIv)
+[![YouTube](https://img.shields.io/badge/📱_App_Walkthrough-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/mbNrKldG-Hc?si=VcrTshc3dG8zANIv)
 
-*Complete app walkthrough showcasing task management, calendar views, and analytics features*
+**Experience the complete feature tour with smooth animations**
 
 </div>
 
