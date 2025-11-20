@@ -678,7 +678,6 @@ flutter build ios --release
 
 </div>
 
-<br>
 
 <div align="center">
 
@@ -693,7 +692,6 @@ flutter build ios --release
      width="150" 
      style="border-radius: 12px; border: 3px solid #6366f1; display: block; margin: 0 auto;">
 
-<br>
 
 <div style="text-align: center; color: #374151; font-size: 14px; line-height: 1.5;">
 <strong>🚀 Scan with your phone</strong><br>
@@ -706,7 +704,6 @@ Instantly download the app to your Android device
 
 </div>
 
-<br>
 ---
 
 ### 📋 System Requirements
