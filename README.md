@@ -37,7 +37,6 @@ To deliver a premium task management experience that's beautiful, fast, and help
 </a>
 
 <br>
-<br>
 
 ### 🎬 **Watch the Full Demo on YouTube**
 
