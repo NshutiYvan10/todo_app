@@ -673,12 +673,12 @@ flutter build ios --release
 
 <div align="center">
 
-[![Download APK](https://img.shields.io/badge/🤖_DOWNLOAD_APK-v1.0.0-4CAF50?style=for-the-badge&logo=android&logoColor=white)](https://github.com/NshutiYvan10/todo_app/releases/download/v1.0.0/flutter_todo_app_v1.0.0.apk)
+[![Download APK](https://img.shields.io/badge/🤖_DOWNLOAD_APK-v1.0.0-4CAF50?style=for-the-badge&logo=android&logoColor=white)](https://github.com/NshutiYvan10/todo_app/releases/download/v1.0.0/todo_app_v1.0.0.apk)
 [![GitHub Release](https://img.shields.io/badge/📦_GitHub_Releases-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NshutiYvan10/todo_app/releases)
 
 ### Scan to install:
 
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/NshutiYvan10/todo_app/releases/download/v1.0.0/flutter_todo_app_v1.0.0.apk" alt="QR Code for APK Download" width="200" height="200" style="border: 2px solid #ddd; border-radius: 8px;">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/NshutiYvan10/todo_app/releases/download/v1.0.0/todo_app_v1.0.0.apk" alt="QR Code for APK Download" width="200" height="200" style="border: 2px solid #ddd; border-radius: 8px;">
 
 **Point your camera at the QR code above to download instantly**
 
