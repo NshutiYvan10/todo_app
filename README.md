@@ -569,13 +569,13 @@ LinearGradient(
 </tr>
 </table>
 
-### 🎨 Design Highlights
-- **Material Design 3**: Latest Material You components
-- **Gradient Effects**: Premium gradients throughout the interface
-- **Smooth Animations**: Polished transitions and micro-interactions
-- **Adaptive Theming**: Beautiful light and dark modes
-- **Custom Typography**: Inter and Lora fonts for elegance
-- **Intuitive Navigation**: Bottom navigation with gradient styling
+### 🎨 Design Highlights<br>
+ **Material Design 3**: Latest Material You components<br>
+ **Gradient Effects**: Premium gradients throughout the interface<br>
+ **Smooth Animations**: Polished transitions and micro-interactions<br>
+ **Adaptive Theming**: Beautiful light and dark modes<br>
+ **Custom Typography**: Inter and Lora fonts for elegance<br>
+ **Intuitive Navigation**: Bottom navigation with gradient styling
 
 </div>
 
