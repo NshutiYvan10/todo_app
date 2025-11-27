@@ -949,9 +949,6 @@ Special thanks to:
 
 ### Get Help
 - 📧 **Email**: yvannshuti10@gmail.com
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/NshutiYvan10/todo_app/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/NshutiYvan10/todo_app/discussions)
-- 📖 **Documentation**: [Wiki](https://github.com/NshutiYvan10/todo_app/wiki)
 
 ### FAQ
 **Q: Does this app require internet?**  
