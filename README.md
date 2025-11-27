@@ -10,7 +10,7 @@
 
 *A beautiful, modern, and feature-rich todo application built with Flutter, featuring elegant UI/UX, local storage with Hive, and powerful task management capabilities.*
 
-[Features](#-features) • [Screenshots](#-screenshots) • [Installation](#-installation) • [Demo](#-demo-video) • [Download APK](#-download-apk)
+[Features](#-features) • [Screenshots](#-screenshots) • [Installation](#-installation--setup) • [Demo](#-demo-video) • [Download APK](#-download-apk)
 
 </div>
 
