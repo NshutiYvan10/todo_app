@@ -875,9 +875,7 @@ I'm a passionate mobile developer specializing in Flutter and Dart, with a focus
 
 ### Connect With Me
 - 📧 **Email**: yvannshuti10@gmail.com
-- 💼 **LinkedIn**: [Your LinkedIn Profile]
 - 🐙 **GitHub**: [@NshutiYvan10](https://github.com/NshutiYvan10)
-- 🌐 **Portfolio**: [Your Portfolio Website]
 
 ---
 
